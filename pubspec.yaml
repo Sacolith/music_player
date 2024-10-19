@@ -7,8 +7,10 @@ environment:
   sdk: ^3.5.3
 
 dependencies:
+  file_picker: ^8.1.2
   flutter:
     sdk: flutter
+  path_provider: ^2.1.4
 
 dev_dependencies:
   flutter_test:
