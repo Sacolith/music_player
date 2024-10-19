@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:music_player/theme/color.dart';
 import 'package:music_player/utils/routes.dart';
 import 'package:music_player/widgets/custom_page_controller.dart';
 
@@ -15,7 +16,9 @@ class MainApp extends StatelessWidget {
      home:const CustomPageController(),
       routes: Routes.getRoutes(),
       theme: ThemeData(
-
+   scaffoldBackgroundColor: Coloring.lavenderBlue,
+   appBarTheme: const AppBarTheme(color: Colors.transparent),
+   
       ),
     );
   }

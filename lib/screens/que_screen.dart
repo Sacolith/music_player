@@ -7,9 +7,19 @@ class QueScreen  extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      appBar: AppBar(title: const CustomText(),
-        backgroundColor: Colors.transparent,),
-      body: const Center(child: Text('Que'),),
+      appBar: AppBar(title: const CustomText(
+        heading: 'Que',
+      ),
+        ),
+      body:  Expanded(
+        child: Column(
+               children: [
+                // ListView.builder(
+                //   itemCount: ,
+                //   itemBuilder: );
+               ],
+        )
+        ),
     );
   }
 }
