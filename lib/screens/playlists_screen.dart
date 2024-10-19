@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:music_player/widgets/custom_text.dart';
 
 class PlaylistsScreen extends StatelessWidget{
   const PlaylistsScreen({super.key});
@@ -6,7 +7,7 @@ class PlaylistsScreen extends StatelessWidget{
   @override 
   Widget build(BuildContext context){
     return Scaffold(
-      appBar: AppBar(
+      appBar: AppBar( title: const CustomText(),
         backgroundColor: Colors.transparent,
       ),
       body: const Center(child: Text('Playlists'),),
