@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:music_player/utils/routes.dart';
+import 'package:music_player/widgets/custom_page_controller.dart';
 
 void main() {
   runApp(const MainApp());
@@ -11,10 +12,10 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      initialRoute: 'home',
+     home:const CustomPageController(),
       routes: Routes.getRoutes(),
       theme: ThemeData(
-        
+
       ),
     );
   }

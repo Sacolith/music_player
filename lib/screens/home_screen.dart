@@ -10,8 +10,11 @@ class _HomeState extends State<HomeScreen>{
    
    @override
    Widget build(BuildContext context){
-    return const Scaffold(
-      body: Center(child: 
+    return Scaffold(
+        appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ) ,
+      body: const Center(child: 
       Text('HOME'),),
     );
    }
