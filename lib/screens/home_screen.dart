@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:music_player/widgets/custom_text.dart';
+import 'package:music_player/widgets/default_screen.dart';
 
 class HomeScreen extends StatefulWidget{
   const HomeScreen({super.key});
@@ -14,15 +15,7 @@ class _HomeState extends State<HomeScreen>{
     return Scaffold(
         appBar: AppBar(title: const CustomText(),
       ) ,
-      body: Expanded(
-        child: Column(
-               children: [
-                // ListView.builder(
-                //   itemCount: ,
-                //   itemBuilder: );
-               ],
-        )
-        )
+      body: const DefaultScreen()
     );
    }
 }

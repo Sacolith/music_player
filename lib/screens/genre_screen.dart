@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:music_player/widgets/custom_text.dart';
+import 'package:music_player/widgets/default_screen.dart';
 
 class GenreScreen extends StatelessWidget{
   const GenreScreen({super.key});
@@ -12,15 +13,7 @@ class GenreScreen extends StatelessWidget{
       ),
         
       ),
-      body: Expanded(
-        child: Column(
-               children: [
-                // ListView.builder(
-                //   itemCount: ,
-                //   itemBuilder: );
-               ],
-        )
-        ),
+      body: const DefaultScreen()
     );
   }
 }

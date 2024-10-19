@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:music_player/widgets/custom_text.dart';
+import 'package:music_player/widgets/default_screen.dart';
 
 class PlaylistsScreen extends StatelessWidget{
   const PlaylistsScreen({super.key});
@@ -9,15 +10,7 @@ class PlaylistsScreen extends StatelessWidget{
     return Scaffold(
       appBar: AppBar( title: const CustomText(heading: 'Playlists',),
       ),
-      body:  Expanded(
-        child: Column(
-               children: [
-                // ListView.builder(
-                //   itemCount: ,
-                //   itemBuilder: );
-               ],
-        )
-        ),
+      body: const DefaultScreen(),
     );
   }
 }
