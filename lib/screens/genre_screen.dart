@@ -11,7 +11,6 @@ class GenreScreen extends StatelessWidget{
       appBar: AppBar(title: const CustomText(
         heading: 'Genre',
       ),
-        
       ),
       body: const DefaultScreen()
     );
