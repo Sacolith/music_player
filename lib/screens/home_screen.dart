@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:music_player/services/music_service_permissionservice.dart';
 import 'package:music_player/widgets/layout/custom_layout.dart';
 import 'package:music_player/widgets/text/custom_text.dart';
 
@@ -19,6 +20,7 @@ class _HomeState extends State<HomeScreen>{
     return Scaffold(
         appBar: AppBar(title: const CustomText(),
       ) ,
+      body: const CustomLayout(),
       body: const CustomLayout(),
     );
    }
