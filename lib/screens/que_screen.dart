@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:music_player/widgets/custom_text.dart';
-import 'package:music_player/widgets/default_screen.dart';
+import 'package:music_player/widgets/layout/custom_layout.dart';
+import 'package:music_player/widgets/text/custom_text.dart';
+import 'package:music_player/widgets/screens/que.dart';
 
 class QueScreen  extends StatelessWidget{
   const QueScreen({super.key});
@@ -12,7 +13,7 @@ class QueScreen  extends StatelessWidget{
         heading: 'Que',
       ),
         ),
-      body: const DefaultScreen()
+      body: const CustomLayout(child: Que(),),
     );
   }
 }

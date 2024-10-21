@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:music_player/widgets/custom_text.dart';
-import 'package:music_player/widgets/default_screen.dart';
+import 'package:music_player/widgets/layout/custom_layout.dart';
+import 'package:music_player/widgets/text/custom_text.dart';
+import 'package:music_player/widgets/screens/genre.dart';
 
 class GenreScreen extends StatelessWidget{
   const GenreScreen({super.key});
@@ -12,7 +13,7 @@ class GenreScreen extends StatelessWidget{
         heading: 'Genre',
       ),
       ),
-      body: const DefaultScreen()
+      body: const CustomLayout(child: Genre(),),
     );
   }
 }
