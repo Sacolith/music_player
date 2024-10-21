@@ -31,19 +31,14 @@ class MainActivity: FlutterActivity() {
         val audioList = mutableListOf<Map<String, String>>()
         val contentResolver: ContentResolver = contentResolver
         val uri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI
-        val projection = arrayOf(
-            MediaStore.Audio.Media.DISPLAY_NAME,
-            MediaStore.Audio.Media.DATA
-            )
+        val projection = arrayOf(MediaStore.Audio.Media.DISPLAY_NAME)
 
         val cursor: Cursor? = contentResolver.query(uri, projection, null, null, null)
         cursor?.use {
             val nameIndex = cursor.getColumnIndexOrThrow(MediaStore.Audio.Media.DISPLAY_NAME)
-            val dataIndex = cursor.getColumnIndexOrThrow(MediaStore.Audio.Media.DATA)
             while (cursor.moveToNext()) {
                 val name = cursor.getString(nameIndex)
-                val path = cursor.getString(dataIndex)
-                audioList.add(mapOf("name" to name, "path" to path))
+                audioList.add(name)
             }
         }
         return audioList
