@@ -1,11 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:music_player/services/music_service_permissionservice.dart';
 import 'package:music_player/theme/color.dart';
 import 'package:music_player/utils/routes.dart';
 import 'package:music_player/widgets/custom_page_controller.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const MyApp());
 }
+
+class MyApp extends StatelessWidget{
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context){
+    
+        return MultiProvider(
+          providers: [
+            ChangeNotifierProvider(create: (_) => MusicProvider()),
+          ],
+          child: const MainApp(),
+        );
+       }
+  }
+
+
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
@@ -17,7 +36,7 @@ class MainApp extends StatelessWidget {
       routes: Routes.getRoutes(),
       theme: ThemeData(
    scaffoldBackgroundColor: Coloring.lavenderBlue,
-   appBarTheme: const AppBarTheme(color: Colors.transparent),
+   appBarTheme: const AppBarTheme(color: Colors.transparent,),
    
       ),
     );
