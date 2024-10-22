@@ -46,4 +46,4 @@ app.*.map.json
 /lib/providers/
 /lib/services/
 /lib/widgets/
-android/app/src/main/kotlin/com/example/music_player/MediaFetcher.kt
+android/app/src/main
