@@ -36,7 +36,7 @@ class MainApp extends StatelessWidget {
       routes: Routes.getRoutes(),
       theme: ThemeData(
    scaffoldBackgroundColor: Coloring.voilet,
-   appBarTheme: const AppBarTheme(color: Colors.transparent),
+   appBarTheme: const AppBarTheme(color: Colors.transparent,),
    
       ),
     );
