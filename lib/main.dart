@@ -35,7 +35,7 @@ class MainApp extends StatelessWidget {
      home:const CustomPageController(),
       routes: Routes.getRoutes(),
       theme: ThemeData(
-   scaffoldBackgroundColor: Coloring.voilet,
+   scaffoldBackgroundColor: const Color.fromARGB(255, 86, 84, 84),
    appBarTheme: const AppBarTheme(color: Colors.transparent,),
    
       ),

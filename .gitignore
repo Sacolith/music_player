@@ -46,4 +46,7 @@ app.*.map.json
 /lib/providers/
 /lib/services/
 /lib/widgets/
-android/app/src/main
+android/app/src/main/
+android/app/src/main/res/
+
+
