@@ -5,6 +5,7 @@ class Routes {
   static Map<String, WidgetBuilder> getRoutes(){
     return{
       'home':(context)=> const HomeScreen(),
+      
     };
   }
 }

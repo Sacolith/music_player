@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:music_player/providers/playlistprovider.dart';
 import 'package:music_player/services/music_service_permissionservice.dart';
 import 'package:music_player/utils/routes.dart';
 import 'package:music_player/widgets/custom_page_controller.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget{
         return MultiProvider(
           providers: [
             ChangeNotifierProvider(create: (_) => MusicProvider()),
+            ChangeNotifierProvider(create: (_)=>PlaylistProvider())
           ],
           child: const MainApp(),
         );
