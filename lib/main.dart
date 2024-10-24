@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:music_player/providers/playlistprovider.dart';
 import 'package:music_player/services/music_service_permissionservice.dart';
 import 'package:music_player/utils/routes.dart';
-import 'package:music_player/widgets/custom_page_controller.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -33,7 +32,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-     home:const CustomPageController(),
+     initialRoute: 'customhome',
       routes: Routes.getRoutes(),
       theme: ThemeData(
    scaffoldBackgroundColor: const Color.fromARGB(255, 86, 84, 84),
